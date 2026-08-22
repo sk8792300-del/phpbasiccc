@@ -20,13 +20,20 @@
 
 // echo ($x*$y);
 
-echo"Welcome to my computer quiz!";
+// echo"Welcome to my computer quiz!";
 
-$playing = strtoupper(readline("Do you want to play?"));
-if($playing != "yes"){
-    exit;
-}
+// $playing = strtoupper(readline("Do you want to play?"));
+// if($playing != "yes"){
+//     exit;
+// }
    
 
-echo"Okay! Let's play :";
-$score = 0;
+// echo"Okay! Let's play :";
+// $score = 0;
+$age = readline("what's your age?");
+if($age>=18){
+    echo"yor are eligible to vote :,$age";
+}
+else{
+    echo " you are not eligible to vote";
+}
