@@ -51,7 +51,32 @@ if($ans == "yes"){
     }
     else{
         echo "Blue door open! Tumhe ek ghost dikhta hai 👻";
+         $ans = strtolower(readline("Kya tum ghost ke paas jaoge?(yes/no): "));
+
+       if($ans == "yes"){
+         echo "Ghost tumse poochta hai: Kya tum treasure chahte ho?(yes/no): ";
+          $ans = strtolower(readline());
+
+         if($ans == "yes"){
+          echo "Ghost tumhe ek puzzle deta hai.\n";// agar tum use solve karte ho to say(yes/no)
+            $ans = strtolower(readline("Kya tum puzzle solve karoge?(yes/no): "));
+
+           if($ans == "yes"){
+            echo "Correct answer → treasure → YOU WIN\n";
+
     }
+         else{
+           echo "Wrong answer → mansion ka door lock → GAME OVER";
+         }
+
+    }
+    else{// if answer no
+        echo "Ghost tumhe secret exit dikha deta hai → SAFE ESCAPE";
+
+       }
+
+     }
+  }
 
 }
 else{
