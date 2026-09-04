@@ -3,7 +3,7 @@
     $choices = ['stone', 'paper', 'scissor'];
     $p_score = 0;
     $c_score = 0;
-
+   while($p_score < 3  ||   $c_score < 3){
     $player = strtolower(readline("Choose stone/paper/scissor: "));
 
     sleep(1);
@@ -36,7 +36,21 @@
     ){
         echo "Player wins!\n";
         $p_score++;
+    
     }else{
         echo "Computer wins!\n";
         $c_score++;
+    
     }
+
+      if ($p_score == 3) {
+          echo "🎉 Player wins the game!\n";
+          
+          exit;
+       } elseif($c_score == 3) {
+           echo "💻 Computer wins the game!\n";
+           exit;
+     }
+    
+   }
+    
